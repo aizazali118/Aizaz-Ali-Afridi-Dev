@@ -16,17 +16,13 @@ const Footer = () => {
     },
     {
       icon: <Linkedin size={20} />,
-      url: 'https://linkedin.com/in/aizazali',
+      url: 'https://linkedin.com/in/aizazali017',
       name: 'LinkedIn'
     },
-    {
-      icon: <Twitter size={20} />,
-      url: 'https://twitter.com/aizazali',
-      name: 'Twitter'
-    },
+    
     {
       icon: <Mail size={20} />,
-      url: 'mailto:aizaz@example.com',
+      url: 'mailto:aaizaz519@gmail.com',
       name: 'Email'
     }
   ];
@@ -60,7 +56,7 @@ const Footer = () => {
               AizazAlidev
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Passionate full-stack developer creating exceptional digital experiences 
+              Passionate Front-end developer creating exceptional digital experiences 
               with modern technologies and innovative solutions.
             </p>
             <div className="flex space-x-4">
