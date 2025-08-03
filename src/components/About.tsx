@@ -33,7 +33,7 @@ const About = () => {
             About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with expertise in modern web technologies. 
+            I'm a passionate front-end Developer with expertise in modern web technologies. 
             I love creating digital experiences that make a difference.
           </p>
         </div>
@@ -44,7 +44,7 @@ const About = () => {
               Turning Ideas Into Reality
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              With over 5 years of experience in web development, I specialize in creating 
+              With over 2 years of experience in web development, I specialize in creating 
               modern, responsive, and user-friendly applications. My expertise spans across 
               frontend development with React, backend development with PHP, and e-commerce 
               solutions with WordPress and Shopify.
@@ -54,12 +54,11 @@ const About = () => {
               technologies to deliver cutting-edge solutions that meet today's digital demands.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">React</span>
-              <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">TypeScript</span>
+              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">ReactJS</spa
               <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">WordPress</span>
               <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium">Shopify</span>
               <span className="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">PHP</span>
-              <span className="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">Tailwind CSS</span>
+              <span className="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">Tailwind CSS, HTML, CSS, JavaScript</span>
             </div>
           </div>
 
