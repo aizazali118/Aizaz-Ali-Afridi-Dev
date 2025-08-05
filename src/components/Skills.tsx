@@ -5,9 +5,9 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        { name: "React / Next.js", level: 20 },
+        { name: "ReactJs", level: 20 },
         { name: "Tailwind CSS", level: 40 },
-        { name: "JavaScript (ES6+)", level: 60 },
+        { name: "JavaScript", level: 70 },
         { name: "CSS", level: 80 },
         { name: "HTML", level: 90 },
       ]
@@ -83,9 +83,9 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Git & GitHub", "Docker", "AWS", "Firebase", "MongoDB", 
-              "GraphQL", "Redux", "Sass/SCSS", "Webpack", "Jest", 
-              "Cypress", "Figma", "Adobe XD", "Photoshop"
+              "Git & GitHub",  "MongoDB", 
+              "Sass/SCSS", "Figma", "Photoshop", "Bootstrap",
+              
             ].map((tech, index) => (
               <span
                 key={index}
