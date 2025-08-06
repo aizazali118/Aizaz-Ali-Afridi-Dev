@@ -12,6 +12,14 @@ const Services = () => {
       features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Secure"],
       price: "Starting at $2000"
     },
+      {
+      id: 2,
+      icon: <Code2 className="text-purple-600" size={32} />,
+      title: "WordPress Solutions",
+      description: "Complete online store with, WooCommerce, and Real State, Hotel Booking, Taxi Booking,Learning Management, Portfolio, Buiness Portfolio.",
+      features: ["Payment Integration", "Inventory Management"],
+      price: "Starting at $599"
+    },
     {
       id: 3,
       icon: <ShoppingCart className="text-purple-600" size={32} />,
@@ -30,7 +38,7 @@ const Services = () => {
     },
     {
       id: 5,
-      icon: <Code2 className="text-orange-600" size={32} />,
+      icon: <ShoppingCart className="text-orange-600" size={32} />,
       title: "Shopif Store Design and Development",
       description: "Tailored solutions for unique business needs using cutting-edge technologies.",
       features: ["API Development", "Database Design", "Third-party Integration", "Maintenance"],
