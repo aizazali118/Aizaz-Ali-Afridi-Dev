@@ -13,14 +13,6 @@ const Services = () => {
       price: "Starting at $999"
     },
     {
-      id: 2,
-      icon: <Smartphone className="text-green-600" size={32} />,
-      title: "Mobile-First Design",
-      description: "Creating responsive designs that work perfectly on all devices, from mobile to desktop.",
-      features: ["Cross-Platform", "Touch Friendly", "Progressive Web Apps", "Offline Support"],
-      price: "Starting at $799"
-    },
-    {
       id: 3,
       icon: <ShoppingCart className="text-purple-600" size={32} />,
       title: "E-Commerce Solutions",
@@ -35,14 +27,6 @@ const Services = () => {
       description: "Beautiful, user-centered designs that enhance user experience and drive conversions.",
       features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
       price: "Starting at $599"
-    },
-    {
-      id: 5,
-      icon: <Code2 className="text-orange-600" size={32} />,
-      title: "Custom Development",
-      description: "Tailored solutions for unique business needs using cutting-edge technologies.",
-      features: ["API Development", "Database Design", "Third-party Integration", "Maintenance"],
-      price: "Starting at $1,299"
     },
     {
       id: 6,
