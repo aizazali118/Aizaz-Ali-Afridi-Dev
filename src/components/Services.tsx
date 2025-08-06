@@ -8,17 +8,17 @@ const Services = () => {
       id: 1,
       icon: <Globe className="text-blue-600" size={32} />,
       title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies like React, TypeScript, and PHP.",
+      description: "Custom websites and web applications built with modern technologies like React, and PHP.",
       features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Secure"],
-      price: "Starting at $999"
+      price: "Starting at $2000"
     },
     {
       id: 3,
       icon: <ShoppingCart className="text-purple-600" size={32} />,
       title: "E-Commerce Solutions",
       description: "Complete online store development with Shopify, WooCommerce, and custom solutions.",
-      features: ["Payment Integration", "Inventory Management", "Order Tracking", "Analytics"],
-      price: "Starting at $1,499"
+      features: ["Payment Integration", "Inventory Management"],
+      price: "Starting at $599"
     },
     {
       id: 4,
@@ -27,6 +27,14 @@ const Services = () => {
       description: "Beautiful, user-centered designs that enhance user experience and drive conversions.",
       features: ["User Research", "Wireframing", "Prototyping", "Design Systems"],
       price: "Starting at $599"
+    },
+    {
+      id: 5,
+      icon: <Code2 className="text-orange-600" size={32} />,
+      title: "Shopif Store Design and Development",
+      description: "Tailored solutions for unique business needs using cutting-edge technologies.",
+      features: ["API Development", "Database Design", "Third-party Integration", "Maintenance"],
+      price: "Starting at $1,299"
     },
     {
       id: 6,
