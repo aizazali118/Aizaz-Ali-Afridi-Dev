@@ -89,7 +89,7 @@ const Projects = () => {
       description: "Eyewear e-commerce platform with modern design and seamless shopping experience.",
       url: "https://chashmatoo.com/",
       image: "https://images.pexels.com/photos/947885/pexels-photo-947885.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "E-commerce",
+      category: "E-commerce Glasses Store",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
     {
