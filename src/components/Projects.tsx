@@ -13,7 +13,7 @@ const Projects = () => {
       url: "https://mymuslimmentors.com/",
       image: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Education",
-      tech: ["WordPress", "PHP", "MySQL"]
+      tech: ["WordPress", "Elementor", "ACF"]
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Projects = () => {
       url: "https://hassan-mehmood.com/",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Portfolio",
-      tech: ["React", "Tailwind CSS", "JavaScript"]
+      tech: ["WordPress", "Elementor", "ACF"]
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Projects = () => {
       url: "https://website.sealedwithmisk.com/",
       image: "https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "E-commerce",
-      tech: ["Shopify", "Liquid", "CSS"]
+      tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Projects = () => {
       url: "https://makkawitransport.com/",
       image: "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Business",
-      tech: ["WordPress", "WooCommerce", "PHP"]
+      tech: ["WordPress", "Elementor", "ACF"]
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ const Projects = () => {
       url: "https://miksecurity.co.uk/",
       image: "https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Security",
-      tech: ["WordPress", "Custom Theme", "PHP"]
+      tech: ["WordPress", "Elementor", "ACF"]
     },
     {
       id: 6,
@@ -58,7 +58,7 @@ const Projects = () => {
       url: "https://aorakinetwork.com/",
       image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Technology",
-      tech: ["React", "Node.js", "MongoDB"]
+      tech: ["WordPress", "Elementor", "ACF"]
     }
   ];
 
@@ -71,7 +71,7 @@ const Projects = () => {
       url: "http://blackpetals.us/",
       image: "https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Design",
-      tech: ["WordPress", "Custom Design", "CSS"]
+      tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
     {
       id: 8,
@@ -80,16 +80,97 @@ const Projects = () => {
       url: "https://www.montiero.pk/",
       image: "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Fashion",
-      tech: ["Shopify", "Custom Theme", "JavaScript"]
+      tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
     {
       id: 9,
+      title: "Chashmatoo",
+      description: "Eyewear e-commerce platform with modern design and seamless shopping experience.",
+      url: "https://chashmatoo.com/",
+      image: "https://images.pexels.com/photos/947885/pexels-photo-947885.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "E-commerce",
+      tech: ["Shopify", "Dawn Theme", "Liquid"]
+    },
+    {
+      id: 10,
+      title: "Hexa IT Solutions",
+      description: "IT services company website with comprehensive service showcase.",
+      url: "http://hexaitsolutions.com/",
+      image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Technology",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 11,
+      title: "Tabadlal Kon",
+      description: "Exchange platform with modern interface and secure transaction system.",
+      url: "http://tabadlalkon.com/",
+      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Finance",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 12,
+      title: "Moallim AI",
+      description: "AI-powered educational platform for personalized learning experiences.",
+      url: "https://moallim.ai/",
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "AI/Education",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 13,
+      title: "Shangrila Hotel",
+      description: "Luxury hotel website with booking system and elegant presentation.",
+      url: "http://shangrila.pk/",
+      image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Hospitality",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 14,
+      title: "Rahmaa Institute",
+      description: "Educational institute website with course management and student portal.",
+      url: "https://rahmaainstitute.com/",
+      image: "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Education",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 15,
+      title: "Sacara Accessories",
+      description: "Fashion accessories e-commerce store with trendy product showcase.",
+      url: "https://sacaraccessories.com/",
+      image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Fashion",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 16,
+      title: "Soul Ease Physiotherapy",
+      description: "Healthcare clinic website with appointment booking and service information.",
+      url: "https://souleasephysiotherapy.com/",
+      image: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Healthcare",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 17,
+      title: "Foot Soul Clinic",
+      description: "Specialized foot care clinic with professional healthcare services.",
+      url: "https://footsoulclinic.co.uk/",
+      image: "https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=800",
+      category: "Healthcare",
+      tech: ["WordPress", "Elementor", "ACF"]
+    },
+    {
+      id: 18,
       title: "Creative Portfolio",
       description: "Modern portfolio website with interactive animations and smooth transitions.",
       url: "https://voluble-selkie-a2b7de.netlify.app/",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "Portfolio",
-      tech: ["React", "Tailwind CSS", "Framer Motion"]
+      tech: ["WordPress", "Elementor", "ACF"]
     }
   ];
 
