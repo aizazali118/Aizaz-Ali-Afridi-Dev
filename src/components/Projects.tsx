@@ -4,6 +4,7 @@ import { ExternalLink, Github, Eye } from 'lucide-react';
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   const projects = [
     {
@@ -269,7 +270,7 @@ const Projects = () => {
 
         {/* Featured Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {(showAllProjects ? allProjects : projects).map((project, index) => (
             <div
               key={project.id}
               className="group relative bg-white/10 backdrop-blur-md rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-500 transform hover:-translate-y-4 hover:scale-105"
@@ -360,8 +361,11 @@ const Projects = () => {
 
         {/* All Projects Button */}
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-            View All Projects
+          <button 
+            onClick={() => setShowAllProjects(!showAllProjects)}
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            {showAllProjects ? 'Show Featured Projects' : 'View All Projects'}
           </button>
         </div>
 
