@@ -13,8 +13,8 @@ const Projects = () => {
       description: "Educational platform connecting students with Islamic mentors and scholars.",
       url: "https://mymuslimmentors.com/",
       image: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Education",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "Mentorship Platform",
+      tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
     {
       id: 2,
@@ -22,17 +22,17 @@ const Projects = () => {
       description: "Professional portfolio website showcasing creative work and achievements.",
       url: "https://hassan-mehmood.com/",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Portfolio",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "UI/UX Designer Portfolio",
+      tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
     {
       id: 3,
       title: "Sealed With Misk",
-      description: "Luxury fragrance and perfume e-commerce platform with elegant design.",
+      description: "Sealed with Misk Institute is an online Islamic education platform. We provide quality and authentic Islamic knowledge using a mix of traditional and modern teaching methods.",
       url: "https://website.sealedwithmisk.com/",
       image: "https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "E-commerce",
-      tech: ["Shopify", "Dawn Theme", "Liquid"]
+      category: "Online Learning Platform",
+      tech: ["WordPress", "Elementor", "Figma", "LearnDash","WooCommerce","Figma to Wordpress"]
     },
     {
       id: 4,
@@ -40,8 +40,8 @@ const Projects = () => {
       description: "Transportation service website with booking and fleet management system.",
       url: "https://makkawitransport.com/",
       image: "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Business",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "Car Booking Service in Riyadh",
+      tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress", "WooCommerce"]
     },
     {
       id: 5,
@@ -49,8 +49,8 @@ const Projects = () => {
       description: "Professional security services company website with service showcase.",
       url: "https://miksecurity.co.uk/",
       image: "https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Security",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "Security Services in UK",
+      tech: ["WordPress", "Elementor", ]
     },
     {
       id: 6,
@@ -58,8 +58,8 @@ const Projects = () => {
       description: "Technology network platform with modern design and interactive features.",
       url: "https://aorakinetwork.com/",
       image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Technology",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "Wifi Provider",
+      tech: ["WordPress", "Elementor", ]
     }
   ];
 
@@ -71,7 +71,7 @@ const Projects = () => {
       description: "Elegant floral design and event planning business website.",
       url: "http://blackpetals.us/",
       image: "https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Design",
+      category: "Flower Shop",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
     {
@@ -80,7 +80,7 @@ const Projects = () => {
       description: "Premium fashion and lifestyle brand with sophisticated e-commerce platform.",
       url: "https://www.montiero.pk/",
       image: "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Fashion",
+      category: "Clothing Store",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
     {
@@ -98,12 +98,12 @@ const Projects = () => {
       description: "IT services company website with comprehensive service showcase.",
       url: "http://hexaitsolutions.com/",
       image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Technology",
+      category: "Digital Marketing",
       tech: ["WordPress", "Elementor", "ACF"]
     },
     {
       id: 11,
-      title: "Tabadlal Kon",
+      title: "Tabadl AlKon",
       description: "Exchange platform with modern interface and secure transaction system.",
       url: "http://tabadlalkon.com/",
       image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -125,8 +125,8 @@ const Projects = () => {
       description: "Luxury hotel website with booking system and elegant presentation.",
       url: "http://shangrila.pk/",
       image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Hospitality",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "Hotel Booking System",
+      tech: ["WordPress", "Elementor", "ACF","PSD to Wordpress","Booking System"]
     },
     {
       id: 14,
@@ -140,11 +140,11 @@ const Projects = () => {
     {
       id: 15,
       title: "Sacara Accessories",
-      description: "Fashion accessories e-commerce store with trendy product showcase.",
+      description: "Car accessories e-commerce store with trendy product showcase.",
       url: "https://sacaraccessories.com/",
       image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "Fashion",
-      tech: ["WordPress", "Elementor", "ACF"]
+      category: "WooCommerce",
+      tech: ["WordPress", "Elementor", "ACF", "WooCommerce"]
     },
     {
       id: 16,
