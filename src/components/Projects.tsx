@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Hassan Mehmood Portfolio",
       description: "Professional portfolio website showcasing creative work and achievements.",
       url: "https://hassan-mehmood.com/",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/project-pictures/hassanmehmood.png",
       category: "UI/UX Designer Portfolio",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
@@ -30,7 +30,7 @@ const Projects = () => {
       title: "Sealed With Misk",
       description: "Sealed with Misk Institute is an online Islamic education platform. We provide quality and authentic Islamic knowledge using a mix of traditional and modern teaching methods.",
       url: "https://website.sealedwithmisk.com/",
-      image: "https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/project-pictures/sealedwithmisk.png",
       category: "Online Learning Platform",
       tech: ["WordPress", "Elementor", "Figma", "LearnDash","WooCommerce","Figma to Wordpress"]
     },
@@ -88,7 +88,7 @@ const Projects = () => {
       title: "Chashmatoo",
       description: "Eyewear e-commerce platform with modern design and seamless shopping experience.",
       url: "https://chashmatoo.com/",
-      image: "https://images.pexels.com/photos/947885/pexels-photo-947885.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/project-pictures/chashmatoo.png",
       category: "E-commerce Glasses Store",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
