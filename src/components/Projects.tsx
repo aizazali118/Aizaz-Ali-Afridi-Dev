@@ -6,6 +6,16 @@ const Projects = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
+  // To use local images in React (Vite, Create React App, etc.), place your images in the `public` folder.
+  // For example, put your images in: public/project-pictures/
+  // Then use: src="/project-pictures/your-image.png"
+  // 
+  // If you put images inside `src/project-pictures`, you need to import them:
+  // import myImage from '../project-pictures/my-image.png';
+  // and use: src={myImage}
+  //
+  // Recommended: Move your images to the `public/project-pictures` folder for easier usage.
+
   const projects = [
     {
       id: 1,
@@ -21,7 +31,7 @@ const Projects = () => {
       title: "Hassan Mehmood Portfolio",
       description: "Professional portfolio website showcasing creative work and achievements.",
       url: "https://hassan-mehmood.com/",
-      image: "/project-pictures/hassan-mehmood.png", // Place 'hassanmehmood.png' inside the 'public/project-pictures' folder
+      image: "/project-pictures/hassan-mehmood.png", // Place 'hassan-mehmood.png' inside the 'public/project-pictures' folder
       category: "UI/UX Designer Portfolio",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
@@ -88,7 +98,7 @@ const Projects = () => {
       title: "Chashmatoo",
       description: "Eyewear e-commerce platform with modern design and seamless shopping experience.",
       url: "https://chashmatoo.com/",
-      image: "/project-pictures/chashmatoo.png",
+      image: "/images/chashmatoo.png",
       category: "E-commerce Glasses Store",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
@@ -228,7 +238,7 @@ const Projects = () => {
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tech.map((tech, index) => (
+                        {(project.tech || []).map((tech, index) => (
                           <span
                             key={index}
                             className="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-sm"
@@ -329,7 +339,7 @@ const Projects = () => {
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, techIndex) => (
+                  {(project.tech || []).map((tech, techIndex) => (
                     <span
                       key={techIndex}
                       className="bg-gray-800/50 text-gray-300 px-2 py-1 rounded text-xs"
