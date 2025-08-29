@@ -22,7 +22,7 @@ const Projects = () => {
       title: "My Muslim Mentors",
       description: "Educational platform connecting students with Islamic mentors and scholars.",
       url: "https://mymuslimmentors.com/",
-      image: "/project-pictures/mymuslimmentors.png",
+      image: "/images/mymuslimmentors.png",
       category: "Mentorship Platform",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
@@ -31,7 +31,7 @@ const Projects = () => {
       title: "Hassan Mehmood Portfolio",
       description: "Professional portfolio website showcasing creative work and achievements.",
       url: "https://hassan-mehmood.com/",
-      image: "/project-pictures/hassan-mehmood.png", // Place 'hassan-mehmood.png' inside the 'public/project-pictures' folder
+      image: "/images/hassan-mehmood.png", // Place 'hassan-mehmood.png' inside the 'public/project-pictures' folder
       category: "UI/UX Designer Portfolio",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Sealed With Misk",
       description: "Sealed with Misk Institute is an online Islamic education platform. We provide quality and authentic Islamic knowledge using a mix of traditional and modern teaching methods.",
       url: "https://website.sealedwithmisk.com/",
-      image: "/project-pictures/sealedwithmisk.png",
+      image: "/images/sealedwithmisk.png",
       category: "Online Learning Platform",
       tech: ["WordPress", "Elementor", "Figma", "LearnDash","WooCommerce","Figma to Wordpress"]
     },
