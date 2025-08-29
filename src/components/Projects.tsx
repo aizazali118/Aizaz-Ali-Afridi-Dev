@@ -12,7 +12,7 @@ const Projects = () => {
       title: "My Muslim Mentors",
       description: "Educational platform connecting students with Islamic mentors and scholars.",
       url: "https://mymuslimmentors.com/",
-      image: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/project-pictures/mymuslimmentors.png",
       category: "Mentorship Platform",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
