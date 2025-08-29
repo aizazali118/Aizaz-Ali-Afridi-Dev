@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Hassan Mehmood Portfolio",
       description: "Professional portfolio website showcasing creative work and achievements.",
       url: "https://hassan-mehmood.com/",
-      image: "/project-pictures/hassanmehmood.png",
+      image: "/project-pictures/hassan-mehmood.png", // Place 'hassanmehmood.png' inside the 'public/project-pictures' folder
       category: "UI/UX Designer Portfolio",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress"]
     },
