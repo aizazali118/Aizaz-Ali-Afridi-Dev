@@ -58,7 +58,7 @@ const Projects = () => {
       title: "MIK Security",
       description: "Professional security services company website with service showcase.",
       url: "https://miksecurity.co.uk/",
-      image: "/images/miksecurity.png",
+      image: "/images/mikpng",
       category: "Security Services in UK",
       tech: ["WordPress", "Elementor", ]
     },
@@ -125,7 +125,7 @@ const Projects = () => {
       title: "Moallim AI",
       description: "AI-powered educational platform for personalized learning experiences.",
       url: "https://moallim.ai/",
-      image: "/images/moallimai.png",
+      image: "/images/moallim.ai.png",
       category: "AI/Education",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -161,7 +161,7 @@ const Projects = () => {
       title: "Soul Ease Physiotherapy",
       description: "Healthcare clinic website with appointment booking and service information.",
       url: "https://souleasephysiotherapy.com/",
-      image: "/images/souleasephysiotherapy.png",
+      image: "/images/souleasephysiotheraphy.png",
       category: "Healthcare",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -179,7 +179,7 @@ const Projects = () => {
       title: "Creative Portfolio",
       description: "Modern portfolio website with interactive animations and smooth transitions.",
       url: "https://voluble-selkie-a2b7de.netlify.app/",
-      image: "/images/creativeportfolio.png",
+      image: "/images/utilityhub.png",
       category: "Portfolio",
       tech: ["WordPress", "Elementor", "ACF"]
     }
