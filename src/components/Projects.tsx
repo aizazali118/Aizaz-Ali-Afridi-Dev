@@ -58,7 +58,7 @@ const Projects = () => {
       title: "MIK Security",
       description: "Professional security services company website with service showcase.",
       url: "https://miksecurity.co.uk/",
-      image: "/images/mikpng",
+      image: "/images/mik.png",
       category: "Security Services in UK",
       tech: ["WordPress", "Elementor", ]
     },
@@ -143,7 +143,7 @@ const Projects = () => {
       title: "Rahmaa Institute",
       description: "Educational institute website with course management and student portal.",
       url: "https://rahmaainstitute.com/",
-      image: "/images/rahmaainstitute.png",
+      image: "/images/rahmaa.org.png",
       category: "Education",
       tech: ["WordPress", "Elementor", "ACF"]
     },
