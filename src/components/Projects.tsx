@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Sealed With Misk",
       description: "Sealed with Misk Institute is an online Islamic education platform. We provide quality and authentic Islamic knowledge using a mix of traditional and modern teaching methods.",
       url: "https://website.sealedwithmisk.com/",
-      image: "/images/sealedwithmisk.png",
+      image: "/images/sealadwithmisk.png",
       category: "Online Learning Platform",
       tech: ["WordPress", "Elementor", "Figma", "LearnDash","WooCommerce","Figma to Wordpress"]
     },
