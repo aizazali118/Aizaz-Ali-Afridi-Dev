@@ -49,7 +49,7 @@ const Projects = () => {
       title: "Makkawi Transport",
       description: "Transportation service website with booking and fleet management system.",
       url: "https://makkawitransport.com/",
-      image: "https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/makkawitransport.png",
       category: "Car Booking Service in Riyadh",
       tech: ["WordPress", "Elementor", "ACF", "Figma to Wordpress", "WooCommerce"]
     },
@@ -58,7 +58,7 @@ const Projects = () => {
       title: "MIK Security",
       description: "Professional security services company website with service showcase.",
       url: "https://miksecurity.co.uk/",
-      image: "https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/miksecurity.png",
       category: "Security Services in UK",
       tech: ["WordPress", "Elementor", ]
     },
@@ -67,7 +67,7 @@ const Projects = () => {
       title: "Aoraki Network",
       description: "Technology network platform with modern design and interactive features.",
       url: "https://aorakinetwork.com/",
-      image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/aorakinetwork.png",
       category: "Wifi Provider",
       tech: ["WordPress", "Elementor", ]
     }
@@ -80,7 +80,7 @@ const Projects = () => {
       title: "Black Petals",
       description: "Elegant floral design and event planning business website.",
       url: "http://blackpetals.us/",
-      image: "https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/blackpetals.png",
       category: "Flower Shop",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
@@ -89,7 +89,7 @@ const Projects = () => {
       title: "Montiero",
       description: "Premium fashion and lifestyle brand with sophisticated e-commerce platform.",
       url: "https://www.montiero.pk/",
-      image: "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/montiero.png",
       category: "Clothing Store",
       tech: ["Shopify", "Dawn Theme", "Liquid"]
     },
@@ -107,7 +107,7 @@ const Projects = () => {
       title: "Hexa IT Solutions",
       description: "IT services company website with comprehensive service showcase.",
       url: "http://hexaitsolutions.com/",
-      image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/hexaitsolutions.png",
       category: "Digital Marketing",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -116,7 +116,7 @@ const Projects = () => {
       title: "Tabadl AlKon",
       description: "Exchange platform with modern interface and secure transaction system.",
       url: "http://tabadlalkon.com/",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/tabadlalkon.png",
       category: "Finance",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -125,7 +125,7 @@ const Projects = () => {
       title: "Moallim AI",
       description: "AI-powered educational platform for personalized learning experiences.",
       url: "https://moallim.ai/",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/moallimai.png",
       category: "AI/Education",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -134,7 +134,7 @@ const Projects = () => {
       title: "Shangrila Hotel",
       description: "Luxury hotel website with booking system and elegant presentation.",
       url: "http://shangrila.pk/",
-      image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/shangrila.png",
       category: "Hotel Booking System",
       tech: ["WordPress", "Elementor", "ACF","PSD to Wordpress","Booking System"]
     },
@@ -143,7 +143,7 @@ const Projects = () => {
       title: "Rahmaa Institute",
       description: "Educational institute website with course management and student portal.",
       url: "https://rahmaainstitute.com/",
-      image: "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/rahmaainstitute.png",
       category: "Education",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -152,7 +152,7 @@ const Projects = () => {
       title: "Sacara Accessories",
       description: "Car accessories e-commerce store with trendy product showcase.",
       url: "https://sacaraccessories.com/",
-      image: "https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/sacaraccessories.png",
       category: "WooCommerce",
       tech: ["WordPress", "Elementor", "ACF", "WooCommerce"]
     },
@@ -161,7 +161,7 @@ const Projects = () => {
       title: "Soul Ease Physiotherapy",
       description: "Healthcare clinic website with appointment booking and service information.",
       url: "https://souleasephysiotherapy.com/",
-      image: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/souleasephysiotherapy.png",
       category: "Healthcare",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -170,7 +170,7 @@ const Projects = () => {
       title: "Foot Soul Clinic",
       description: "Specialized foot care clinic with professional healthcare services.",
       url: "https://footsoulclinic.co.uk/",
-      image: "https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/footsoulclinic.png",
       category: "Healthcare",
       tech: ["WordPress", "Elementor", "ACF"]
     },
@@ -179,7 +179,7 @@ const Projects = () => {
       title: "Creative Portfolio",
       description: "Modern portfolio website with interactive animations and smooth transitions.",
       url: "https://voluble-selkie-a2b7de.netlify.app/",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/images/creativeportfolio.png",
       category: "Portfolio",
       tech: ["WordPress", "Elementor", "ACF"]
     }
