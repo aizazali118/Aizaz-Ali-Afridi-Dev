@@ -279,25 +279,6 @@ const Projects = () => {
         </div>
 
        
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-white/10">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">25+</div>
-            <div className="text-gray-300">Projects Completed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">20+</div>
-            <div className="text-gray-300">Happy Clients</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">2+</div>
-            <div className="text-gray-300">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">24/7</div>
-            <div className="text-gray-300">Support Available</div>
-          </div>
-        </div>
       </div>
 
       {/* Background Animation */}
