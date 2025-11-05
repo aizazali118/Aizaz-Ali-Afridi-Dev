@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, Eye } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   // To use local images in React (Vite, Create React App, etc.), place your images in the `public` folder.
   // For example, put your images in: public/project-pictures/
@@ -195,9 +201,9 @@ const Projects = () => {
   }, [isHovered, allProjects.length]);
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+    <section id="projects" ref={ref} className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 transition-all duration-1000 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Featured <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Projects</span>
           </h2>

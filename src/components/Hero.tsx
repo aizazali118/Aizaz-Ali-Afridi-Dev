@@ -1,108 +1,141 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      title: "ReactJS Frontend Developer",
-      subtitle: "Building Modern Web Applications",
-      description: "Creating responsive, interactive, and performant user interfaces with React, TypeScript, and modern frontend technologies.",
-      gradient: "from-blue-600 via-purple-600 to-blue-800",
-      image: "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      title: "WordPress Developer & Designer",
-      subtitle: "Custom WordPress Solutions",
-      description: "Developing custom themes, plugins, and complete WordPress solutions that are scalable, secure, and SEO-optimized.",
-      gradient: "from-green-600 via-teal-600 to-blue-600",
-      image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      title: "Shopify Designer & Developer",
-      subtitle: "E-commerce Excellence",
-      description: "Creating stunning Shopify stores with custom themes, apps, and integrations to boost your online business.",
-      gradient: "from-purple-600 via-pink-600 to-red-600",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    }
-  ];
+  const [rotation, setRotation] = useState(0);
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: false,
+  });
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timer);
+    const interval = setInterval(() => {
+      setRotation((prev) => (prev + 1) % 360);
+    }, 30);
+    return () => clearInterval(interval);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+  const skills = [
+    { name: 'WordPress', icon: '🔧' },
+    { name: 'Shopify', icon: '🛍️' },
+    { name: 'Frontend', icon: '💻' },
+    { name: 'Figma', icon: '🎨' }
+  ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={slides[currentSlide].image}
-          alt="Background"
-          className="w-full h-full object-cover transition-all duration-1000 ease-in-out"
-        />
-        <div className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].gradient} opacity-80 transition-all duration-1000`}></div>
-      </div>
+    <section
+      id="home"
+      ref={ref}
+      className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 flex items-center justify-center py-20 overflow-hidden relative"
+    >
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyNTYzZWIiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE0YzMuMzEgMCA2IDIuNjkgNiA2cy0yLjY5IDYtNiA2LTYtMi42OS02LTYgMi42OS02IDYtNnpNNiA0N2MzLjMxIDAgNiAyLjY5IDYgNnMtMi42OSA2LTYgNi02LTIuNjktNi02IDIuNjktNiA2LTZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <div className="animate-fade-in">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            {slides[currentSlide].title}
-          </h1>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-light mb-8 text-gray-200">
-            {slides[currentSlide].subtitle}
-          </h2>
-          <p className="text-lg sm:text-xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            {slides[currentSlide].description}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
-              View My Work
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
-              Get In Touch
-            </button>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className={`text-white space-y-8 transition-all duration-1000 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Hi, I'm <br />
+                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
+                  Aizaz Ali Afridi
+                </span>
+              </h1>
+
+              <div className="space-y-2">
+                <p className="text-xl md:text-2xl text-gray-300 font-light">
+                  WordPress & Shopify Developer
+                </p>
+                <p className="text-xl md:text-2xl text-gray-300 font-light">
+                  Frontend, UI & UX Designer
+                </p>
+              </div>
+
+              <p className="text-lg text-gray-400 leading-relaxed max-w-xl">
+                Crafting beautiful, functional, and user-centric digital experiences
+                that help businesses grow and succeed online.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/50"
+              >
+                View My Work
+              </a>
+              <a
+                href="#contact"
+                className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105"
+              >
+                Get In Touch
+              </a>
+            </div>
+
+            <div className="flex items-center gap-6 pt-4">
+              <div className="flex flex-col">
+                <span className="text-3xl font-bold text-white">2+</span>
+                <span className="text-sm text-gray-400">Years Experience</span>
+              </div>
+              <div className="h-12 w-px bg-gray-600"></div>
+              <div className="flex flex-col">
+                <span className="text-3xl font-bold text-white">25+</span>
+                <span className="text-sm text-gray-400">Projects Done</span>
+              </div>
+              <div className="h-12 w-px bg-gray-600"></div>
+              <div className="flex flex-col">
+                <span className="text-3xl font-bold text-white">20+</span>
+                <span className="text-sm text-gray-400">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+
+          <div className={`relative flex items-center justify-center transition-all duration-1000 delay-300 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
+            <div className="relative w-full max-w-md aspect-square flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 rounded-full blur-3xl animate-pulse"></div>
+
+              <div className="relative z-10 w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-400/30 shadow-2xl">
+                <img
+                  src="/images/aizaz ali.png"
+                  alt="Aizaz Ali Afridi"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent"></div>
+              </div>
+
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  {skills.map((skill, index) => {
+                    const angle = (rotation + (index * 90)) * (Math.PI / 180);
+                    const radius = 200;
+                    const x = Math.cos(angle) * radius;
+                    const y = Math.sin(angle) * radius;
+
+                    return (
+                      <div
+                        key={skill.name}
+                        className="absolute top-1/2 left-1/2 transition-all duration-100"
+                        style={{
+                          transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
+                        }}
+                      >
+                        <div className="bg-white rounded-full p-4 shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group cursor-pointer">
+                          <div className="text-center">
+                            <div className="text-3xl mb-1">{skill.icon}</div>
+                            <span className="text-xs font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                              {skill.name}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="absolute inset-0 border-2 border-dashed border-blue-400/30 rounded-full animate-spin-slow"></div>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-white/30 transition-all duration-300"
-      >
-        <ChevronLeft className="text-white" size={24} />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-white/30 transition-all duration-300"
-      >
-        <ChevronRight className="text-white" size={24} />
-      </button>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/75'
-            }`}
-          />
-        ))}
       </div>
     </section>
   );
