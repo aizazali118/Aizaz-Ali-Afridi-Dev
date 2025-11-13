@@ -45,7 +45,7 @@ app.post('/api/contact', async (req, res) => {
     // Email options
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER, // Send to your Gmail
+      to: 'aaizaz519@gmail.com',
       subject: `Portfolio Contact: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">

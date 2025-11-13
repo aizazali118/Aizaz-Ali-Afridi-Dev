@@ -16,10 +16,15 @@ const Hero = () => {
   }, []);
 
   const skills = [
-    { name: 'WordPress', icon: '🔧' },
-    { name: 'Shopify', icon: '🛍️' },
-    { name: 'Frontend', icon: '💻' },
-    { name: 'Figma', icon: '🎨' }
+    { name: 'WordPress', logo: 'https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg' },
+    { name: 'Shopify', logo: 'https://cdn.worldvectorlogo.com/logos/shopify.svg' },
+    { name: 'Figma', logo: 'https://cdn.worldvectorlogo.com/logos/figma-5.svg' },
+    { name: 'Frontend', logo: 'https://cdn.worldvectorlogo.com/logos/react-2.svg' },
+    { name: 'Photoshop', logo: 'https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg' },
+    { name: 'YouTube', logo: 'https://cdn.worldvectorlogo.com/logos/youtube-icon.svg' },
+    { name: 'Facebook', logo: 'https://cdn.worldvectorlogo.com/logos/facebook-4.svg' },
+    { name: 'LinkedIn', logo: 'https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg' },
+    { name: 'Instagram', logo: 'https://cdn.worldvectorlogo.com/logos/instagram-2016.svg' }
   ];
 
   return (
@@ -105,7 +110,7 @@ const Hero = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative w-full h-full">
                   {skills.map((skill, index) => {
-                    const angle = (rotation + (index * 90)) * (Math.PI / 180);
+                    const angle = (rotation + (index * (360 / skills.length))) * (Math.PI / 180);
                     const radius = 200;
                     const x = Math.cos(angle) * radius;
                     const y = Math.sin(angle) * radius;
@@ -118,10 +123,14 @@ const Hero = () => {
                           transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
                         }}
                       >
-                        <div className="bg-white rounded-full p-4 shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group cursor-pointer">
-                          <div className="text-center">
-                            <div className="text-3xl mb-1">{skill.icon}</div>
-                            <span className="text-xs font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                        <div className="bg-white rounded-full p-3 shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group cursor-pointer w-16 h-16">
+                          <div className="text-center relative">
+                            <img
+                              src={skill.logo}
+                              alt={skill.name}
+                              className="w-10 h-10 object-contain"
+                            />
+                            <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs font-semibold text-white bg-gray-900/80 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                               {skill.name}
                             </span>
                           </div>
