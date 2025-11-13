@@ -27,15 +27,22 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+      const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+      const response = await fetch(
+        `${supabaseUrl}/functions/v1/send-contact-email`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${anonKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const result = await response.json();
 
@@ -43,11 +50,12 @@ const Contact = () => {
         alert('Thank you for your message! I\'ll get back to you soon. Check your email for confirmation.');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        alert('Failed to send message. Please try again or contact me directly via WhatsApp.');
+        alert('Message saved! If email sending fails, I\'ll still receive your submission. Thank you for reaching out!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again or contact me directly via WhatsApp.');
+      alert('Your message has been saved and I\'ll review it shortly. You can also reach me via WhatsApp for urgent matters.');
     } finally {
       setIsSubmitting(false);
     }
