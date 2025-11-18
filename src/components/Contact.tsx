@@ -66,13 +66,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" ref={ref} className="py-20 bg-gray-900 text-white">
+    <section id="contact" ref={ref} className="py-20 bg-transparent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-1000 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Get In <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Touch</span>
+            Get In <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Ready to start your next project? Let's discuss how I can help bring your vision to life.
           </p>
         </div>
@@ -81,33 +81,33 @@ const Contact = () => {
           <div className={`space-y-8 transition-all duration-1000 delay-200 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div>
               <h3 className="text-3xl font-bold mb-6">Let's Talk</h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                I'm always interested in hearing about new projects and opportunities. 
-                Whether you're a company looking to hire, or you're someone with a great idea, 
+              <p className="text-slate-300 text-lg leading-relaxed mb-8">
+                I'm always interested in hearing about new projects and opportunities.
+                Whether you're a company looking to hire, or you're someone with a great idea,
                 I'd love to hear from you.
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="bg-blue-600 p-3 rounded-full">
+                <div className="bg-blue-500 p-3 rounded-full">
                   <Phone size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">Phone</h4>
-                  <p className="text-gray-300">+92 335 9574017<br />+92 302 960 1217</p>
+                  <p className="text-slate-300">+92 335 9574017<br />+92 302 960 1217</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="bg-green-600 p-3 rounded-full">
+                <div className="bg-emerald-500 p-3 rounded-full">
                   <MessageCircle size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">WhatsApp</h4>
                   <button
                     onClick={handleWhatsApp}
-                    className="text-green-400 hover:text-green-300 transition-colors duration-300"
+                    className="text-emerald-400 hover:text-emerald-300 transition-colors duration-300"
                   >
                     Chat with me on WhatsApp
                   </button>
@@ -115,22 +115,22 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="bg-purple-600 p-3 rounded-full">
+                <div className="bg-cyan-500 p-3 rounded-full">
                   <Mail size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">Email</h4>
-                  <p className="text-gray-300">aaizaz519@gmail.com</p>
+                  <p className="text-slate-300">aaizaz519@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="bg-red-600 p-3 rounded-full">
+                <div className="bg-amber-500 p-3 rounded-full">
                   <MapPin size={20} />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">Location</h4>
-                  <p className="text-gray-300">Pakistan</p>
+                  <p className="text-slate-300">Pakistan</p>
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ const Contact = () => {
             <div className="pt-8">
               <button
                 onClick={handleWhatsApp}
-                className="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 flex items-center space-x-3"
+                className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 flex items-center space-x-3"
               >
                 <MessageCircle size={20} />
                 <span>Quick Chat on WhatsApp</span>
@@ -147,11 +147,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className={`bg-gray-800 p-8 rounded-2xl transition-all duration-1000 delay-400 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+          <div className={`bg-slate-800/30 border border-slate-700/50 p-8 rounded-2xl transition-all duration-1000 delay-400 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
                     Your Name
                   </label>
                   <input
@@ -161,12 +161,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-slate-400"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
                     Email Address
                   </label>
                   <input
@@ -176,14 +176,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
+                    className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-slate-400"
                     placeholder="john@example.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-2">
                   Subject
                 </label>
                 <input
@@ -193,13 +193,13 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
+                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-slate-400"
                   placeholder="Project Discussion"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -209,7 +209,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 resize-none"
+                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-slate-400 resize-none"
                   placeholder="Tell me about your project..."
                 />
               </div>
@@ -217,7 +217,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-3"
+                className="w-full bg-gradient-to-r from-blue-500 to-emerald-500 text-white py-4 px-6 rounded-lg font-semibold hover:from-blue-600 hover:to-emerald-600 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-3"
               >
                 {isSubmitting ? (
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>

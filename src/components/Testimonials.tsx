@@ -84,51 +84,51 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" ref={ref} className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <section id="testimonials" ref={ref} className="py-20 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-1000 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            What Clients <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Say</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            What Clients <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Say</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Don't just take my word for it. Here's what my clients have to say about working with me.
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
           {/* Main Testimonial */}
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 relative overflow-hidden">
-            <div className="absolute top-6 left-6 text-blue-600 opacity-20">
+          <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl shadow-2xl hover:shadow-lg hover:shadow-blue-500/10 p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute top-6 left-6 text-blue-400 opacity-20">
               <Quote size={48} />
             </div>
-            
+
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div className="flex-shrink-0">
                   <img
                     src={testimonials[currentTestimonial].image}
                     alt={testimonials[currentTestimonial].name}
-                    className="w-24 h-24 rounded-full object-cover border-4 border-blue-100"
+                    className="w-24 h-24 rounded-full object-cover border-4 border-blue-400/30"
                   />
                 </div>
-                
+
                 <div className="flex-1 text-center md:text-left">
                   <div className="flex justify-center md:justify-start mb-4">
                     {renderStars(testimonials[currentTestimonial].rating)}
                   </div>
-                  
-                  <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed italic">
+
+                  <p className="text-lg md:text-xl text-slate-200 mb-6 leading-relaxed italic">
                     "{testimonials[currentTestimonial].text}"
                   </p>
-                  
+
                   <div>
-                    <h4 className="text-xl font-bold text-gray-900">
+                    <h4 className="text-xl font-bold text-white">
                       {testimonials[currentTestimonial].name}
                     </h4>
-                    <p className="text-blue-600 font-medium">
+                    <p className="text-blue-400 font-medium">
                       {testimonials[currentTestimonial].position}
                     </p>
-                    <p className="text-gray-500">
+                    <p className="text-slate-400">
                       {testimonials[currentTestimonial].company}
                     </p>
                   </div>
@@ -140,15 +140,15 @@ const Testimonials = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-50 transition-all duration-300 z-10"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-slate-800/50 border border-slate-700 shadow-lg p-3 rounded-full hover:bg-slate-700/50 transition-all duration-300 z-10"
           >
-            <ChevronLeft className="text-gray-600" size={24} />
+            <ChevronLeft className="text-slate-300" size={24} />
           </button>
           <button
             onClick={nextTestimonial}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-50 transition-all duration-300 z-10"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-slate-800/50 border border-slate-700 shadow-lg p-3 rounded-full hover:bg-slate-700/50 transition-all duration-300 z-10"
           >
-            <ChevronRight className="text-gray-600" size={24} />
+            <ChevronRight className="text-slate-300" size={24} />
           </button>
 
           {/* Indicators */}
@@ -158,9 +158,9 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentTestimonial 
-                    ? 'bg-blue-600 scale-125' 
-                    : 'bg-gray-300 hover:bg-gray-400'
+                  index === currentTestimonial
+                    ? 'bg-blue-400 scale-125'
+                    : 'bg-slate-600 hover:bg-slate-500'
                 }`}
               />
             ))}
@@ -172,7 +172,7 @@ const Testimonials = () => {
           {testimonials.slice(0, 3).map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-slate-800/30 border border-slate-700/50 p-6 rounded-xl hover:border-slate-600 hover:bg-slate-800/50 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="flex items-center mb-4">
                 <img
@@ -181,14 +181,14 @@ const Testimonials = () => {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h5 className="font-semibold text-gray-900">{testimonial.name}</h5>
-                  <p className="text-sm text-gray-600">{testimonial.company}</p>
+                  <h5 className="font-semibold text-white">{testimonial.name}</h5>
+                  <p className="text-sm text-slate-400">{testimonial.company}</p>
                 </div>
               </div>
               <div className="flex mb-3">
                 {renderStars(testimonial.rating)}
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-slate-300 text-sm leading-relaxed">
                 "{testimonial.text.substring(0, 120)}..."
               </p>
             </div>

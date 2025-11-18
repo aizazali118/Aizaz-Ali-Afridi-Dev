@@ -201,13 +201,13 @@ const Projects = () => {
   }, [isHovered, allProjects.length]);
 
   return (
-    <section id="projects" ref={ref} className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+    <section id="projects" ref={ref} className="py-20 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-1000 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Featured <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Projects</span>
+            Featured <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Explore some of my recent work and see how I bring ideas to life through code and design.
           </p>
         </div>
@@ -230,17 +230,17 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                  
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                     <div className="max-w-2xl">
-                      <span className="inline-block bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">
+                      <span className="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">
                         {project.category}
                       </span>
                       <h3 className="text-3xl md:text-4xl font-bold mb-4">
                         {project.title}
                       </h3>
-                      <p className="text-lg text-gray-200 mb-6 leading-relaxed">
+                      <p className="text-lg text-slate-200 mb-6 leading-relaxed">
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2 mb-6">
@@ -290,22 +290,22 @@ const Projects = () => {
         
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-slate-700/50">
           <div className="text-center">
             <div className="text-4xl font-bold text-white mb-2">25+</div>
-            <div className="text-gray-300">Projects Completed</div>
+            <div className="text-slate-300">Projects Completed</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-white mb-2">20+</div>
-            <div className="text-gray-300">Happy Clients</div>
+            <div className="text-slate-300">Happy Clients</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-white mb-2">2+</div>
-            <div className="text-gray-300">Years Experience</div>
+            <div className="text-slate-300">Years Experience</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-white mb-2">24/7</div>
-            <div className="text-gray-300">Support Available</div>
+            <div className="text-slate-300">Support Available</div>
           </div>
         </div>
       </div>

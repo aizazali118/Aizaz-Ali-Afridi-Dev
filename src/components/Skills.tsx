@@ -36,13 +36,13 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" ref={ref} className="py-20 bg-white">
+    <section id="skills" ref={ref} className="py-20 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-1000 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            My <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Skills</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            My <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Here are the technologies and tools I work with to bring your ideas to life.
           </p>
         </div>
@@ -51,26 +51,26 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300"
+              className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-8 hover:border-slate-600 hover:bg-slate-800/50 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-8 text-center">
                 {category.title}
               </h3>
-              
+
               <div className="space-y-6">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-700 font-medium">
+                      <span className="text-slate-300 font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-blue-600 font-semibold">
+                      <span className="text-blue-400 font-semibold">
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3">
+                    <div className="w-full bg-slate-700/40 rounded-full h-3">
                       <div
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 h-3 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-blue-500 to-emerald-500 h-3 rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -82,18 +82,18 @@ const Skills = () => {
         </div>
 
         <div className={`mt-16 text-center transition-all duration-1000 delay-400 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">
+          <h3 className="text-2xl font-bold text-white mb-8">
             Additional Technologies
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Git & GitHub",  "MongoDB", 
+              "Git & GitHub",  "MongoDB",
               "Sass/SCSS", "Figma", "Photoshop", "Bootstrap",
-              
+
             ].map((tech, index) => (
               <span
                 key={index}
-                className="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-full hover:border-blue-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
+                className="bg-slate-800/30 border border-slate-700/50 text-slate-300 px-4 py-2 rounded-full hover:border-blue-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-105"
               >
                 {tech}
               </span>

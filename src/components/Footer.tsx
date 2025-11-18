@@ -46,17 +46,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-slate-950/50 border-t border-slate-800 text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-4">
               AizazAlidev
             </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Passionate Front-end developer creating exceptional digital experiences 
+            <p className="text-slate-300 mb-6 leading-relaxed">
+              Passionate Front-end developer creating exceptional digital experiences
               with modern technologies and innovative solutions.
             </p>
             <div className="flex space-x-4">
@@ -66,7 +66,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
+                  className="bg-slate-800/50 border border-slate-700 p-3 rounded-full hover:bg-blue-500 hover:border-blue-500 transition-all duration-300 transform hover:scale-110"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -83,7 +83,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                    className="text-slate-300 hover:text-blue-400 transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -98,7 +98,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-gray-300">
+                  <span className="text-slate-300">
                     {service}
                   </span>
                 </li>
@@ -111,26 +111,26 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Get In Touch</h4>
             <div className="space-y-4">
               <div>
-                <p className="text-gray-300">
+                <p className="text-slate-300">
                   <strong>Phone:</strong><br />
                   +92 335 9574017
                 </p>
               </div>
               <div>
-                <p className="text-gray-300">
+                <p className="text-slate-300">
                   <strong>Email:</strong><br />
                   aaizaz519@gmail.com
                 </p>
               </div>
               <div>
-                <p className="text-gray-300">
+                <p className="text-slate-300">
                   <strong>Location:</strong><br />
                   Pakistan
                 </p>
               </div>
               <button
                 onClick={() => window.open('https://wa.me/923359574017', '_blank')}
-                className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105 text-sm"
+                className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 text-sm"
               >
                 WhatsApp Me
               </button>
@@ -140,25 +140,25 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 text-gray-300 mb-4 md:mb-0">
+            <div className="flex items-center space-x-2 text-slate-300 mb-4 md:mb-0">
               <span>© {currentYear} AizazAlidev. Made with</span>
               <Heart className="text-red-500 fill-current" size={16} />
               <span>in Pakistan</span>
             </div>
-            
+
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm">
+              <a href="#" className="text-slate-300 hover:text-blue-400 transition-colors duration-300 text-sm">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-sm">
+              <a href="#" className="text-slate-300 hover:text-blue-400 transition-colors duration-300 text-sm">
                 Terms of Service
               </a>
               <button
                 onClick={scrollToTop}
-                className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110"
+                className="bg-blue-500 p-2 rounded-full hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
                 aria-label="Scroll to top"
               >
                 <ArrowUp size={16} />
